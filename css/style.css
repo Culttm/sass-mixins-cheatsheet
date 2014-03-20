@@ -35,32 +35,6 @@ html, body {
   margin-right: auto;
 }
 
-.box {
-  position: relative;
-  width: 30px;
-  height: 70px;
-  background: -webkit-linear-gradient( red, green) left repeat;
-  background: linear-gradient( red, green) left repeat;
-  position: relative;
-}
-.box:hover {
-  -webkit-animation-name: scale, slide;
-  -moz-animation-name: scale, slide;
-  animation-name: scale, slide;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation: scale 1s ease-in, slide 2s ease;
-  -moz-animation: scale 1s ease-in, slide 2s ease;
-  animation: scale 1s ease-in, slide 2s ease;
-}
-
 button {
   border: 1px solid #b50000;
   border-radius: 3px;
@@ -93,4 +67,11 @@ button:active:not(:disabled) {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.qw {
+  margin-left: 100px;
+  height: 200px;
+  background: -webkit-linear-gradient( #525252, #cccccc);
+  background: linear-gradient( #525252, #cccccc);
 }
