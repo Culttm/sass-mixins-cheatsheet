@@ -1,0 +1,54 @@
+// @import "compass/reset";
+@import "../variables/variables";
+
+@import "compass/layout";
+@import "compass/css3";
+@import "../bourbon/_bourbon";
+
+
+body{margin: 0; padding: 0;}
+
+/* --- HTML 5 Fix --- */
+section, article, header, footer, nav, aside, hgroup, main{
+	display: block
+
+}
+  
+
+@include sticky-footer($pusher-height, ".wrapper", ".pusher", ".footer");
+
+
+.wrapper{width: 980px; margin-left: auto; margin-right: auto}
+
+.box{
+
+	@include position(relative);
+ 	@include size(30px 70px);
+	@include background(linear-gradient(red, green) left repeat);
+	position: relative;
+
+
+	&:hover {
+	  @include animation-name(scale, slide);
+	  @include animation-duration(2s);
+	  @include animation-timing-function(ease);
+	  @include animation-iteration-count(infinite);
+
+	  // Animation shorthand works the same as the CSS3 animation shorthand
+	  @include animation(scale 1.0s ease-in, slide 2.0s ease);
+	}
+}
+
+
+
+
+ button{
+ 	@include button(#fc0000)
+ }
+
+
+
+
+
+
+

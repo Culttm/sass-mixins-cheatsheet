@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- HTML 5 Fix --- */
+section, article, header, footer, nav, aside, hgroup, main {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+.wrapper .pusher {
+  height: 100px;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  height: 100px;
+}
+
+.wrapper {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  position: relative;
+  width: 30px;
+  height: 70px;
+  background: -webkit-linear-gradient( red, green) left repeat;
+  background: linear-gradient( red, green) left repeat;
+  position: relative;
+}
+.box:hover {
+  -webkit-animation-name: scale, slide;
+  -moz-animation-name: scale, slide;
+  animation-name: scale, slide;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+button {
+  border: 1px solid #b50000;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #f85151;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #fc0000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc0000), color-stop(100%, #c40000));
+  background-image: -webkit-linear-gradient(#fc0000, #c40000);
+  background-image: linear-gradient(#fc0000, #c40000);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #a00000;
+  background-clip: padding-box;
+}
+button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #f71f1f;
+  cursor: pointer;
+  background-color: #de0505;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de0505), color-stop(100%, #b50000));
+  background-image: -webkit-linear-gradient(#de0505, #b50000);
+  background-image: linear-gradient(#de0505, #b50000);
+}
+button:active:not(:disabled) {
+  border: 1px solid #b50000;
+  box-shadow: inset 0 0 8px 4px #a50000, inset 0 0 8px 4px #a50000, 0 1px 1px 0 #eeeeee;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
